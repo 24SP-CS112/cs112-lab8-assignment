@@ -9,7 +9,7 @@
 using namespace std;
 
 class StackException {
-   public:
+public:
     StackException(const string& whereThrown, const string& message) {
         myLocation = whereThrown;
         myMessage = message;
@@ -19,7 +19,7 @@ class StackException {
         return "*** StackException in " + myLocation + ": " + myMessage;
     }
 
-   private:
+private:
     string myLocation;
     string myMessage;
 };

@@ -16,22 +16,22 @@
 #include <iostream>
 #include <string>
 
-//#include "StackException.h"
+// #include "StackException.h"
 using namespace std;
 
 typedef int Item;
 
 class Stack {
-   public:
+public:
     Stack(unsigned capacity);
     Stack(const Stack& original);
     ~Stack();
     Stack& operator=(const Stack& original);
 
-   protected:
+protected:
     void makeCopyOf(const Stack& original);
 
-   private:
+private:
     unsigned myCapacity;
     unsigned mySize;
     Item* myArray;
