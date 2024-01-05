@@ -12,7 +12,19 @@ Queue::Queue(const Queue& original) {
 Queue::~Queue() {
 }
 
-void Queue::getSize() const {
+Queue::Node::Node(const Item& it, Node* next) {
+}
+
+Queue::Node::~Node() {
+}
+
+int Queue::getSize() const {
+}
+
+bool Queue::isEmpty() const {
+}
+
+bool Queue::isFull() const {
 }
 
 Item Queue::peekFront() const {
@@ -21,11 +33,8 @@ Item Queue::peekFront() const {
 Item Queue::peekBack() const {
 }
 
-void Queue::add(Item i) {
+void Queue::add(const Item& it) {
 }
 
 void Queue::remove() {
-}
-
-void Queue::makeCopyOf(const Queue& original) {
 }

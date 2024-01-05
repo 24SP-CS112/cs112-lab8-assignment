@@ -20,13 +20,12 @@ public:
     Queue();
     Queue(const Queue& original);
     ~Queue();
-    Queue& operator=(const Queue& original);
-    void getSize() const;
+    int getSize() const;
     bool isEmpty() const;
     bool isFull() const;
     Item peekFront() const;
     Item peekBack() const;
-    void add(Item i);
+    void add(const Item& it);
     void remove();
 
 protected:
